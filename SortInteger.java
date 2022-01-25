@@ -4,26 +4,21 @@ public class SortInteger {
     public static void main(String[] args) {
         int[] array = new int[0];
         sorted(array);
-
     }
-        public static void sorted(int[] numArray){
+
+    public static void sorted(int[] numArray) {
         Scanner sc = new Scanner(System.in);
         System.out.println("Enter an integer values");
-        int input  = sc.nextInt();
+        int input = sc.nextInt();
         numArray = new int[input];
 
-        for (int i=0; i<input; i++){
+        for (int i = 0; i < input; i++) {
             System.out.println("enter values");
             numArray[i] = sc.nextInt();
         }
-        System.out.println("you have entered");
-        for (int i = 0; i< numArray.length; i++){
-            System.out.println(numArray[i] + ",");
-        }
-
-        for (int i=0; i< numArray.length; i++){
-            for(int j=i; j<numArray.length; j++){
-                if (numArray[i] > numArray[j]){
+        for (int i = 0; i < numArray.length; i++) {
+            for (int j = i; j < numArray.length; j++) {
+                if (numArray[i] > numArray[j]) {
                     int temp = numArray[i];
                     numArray[i] = numArray[j];
                     numArray[j] = temp;
@@ -31,10 +26,8 @@ public class SortInteger {
             }
         }
         System.out.println("final values after sort");
-        for (int i=0; i< numArray.length; i++){
+        for (int i = 0; i < numArray.length; i++) {
             System.out.println(numArray[i] + ",");
         }
-
     }
-
 }
