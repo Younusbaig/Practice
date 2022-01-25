@@ -1,0 +1,12 @@
+import org.junit.Test;
+
+import static org.junit.jupiter.api.Assertions.assertArrayEquals;
+
+public class SortIntegerTest {
+
+    @Test
+    public void Test() {
+        int[] actual = {9, 7, 2, 3, 4, 1, 8, 5, 6};
+        int[] expected = {1, 2, 3, 4, 5, 6, 7, 8, 9};
+        SortInteger.sorted(actual);
+        assertArrayEquals(expected, actual);
