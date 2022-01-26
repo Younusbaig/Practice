@@ -10,3 +10,13 @@ public class SortIntegerTest {
         int[] expected = {1, 2, 3, 4, 5, 6, 7, 8, 9};
         SortInteger.sorted(actual);
         assertArrayEquals(expected, actual);
+    }
+
+    @Test(expected = NullPointerException.class)
+    public void TestNullCase(){
+        int[] actual = {9, 7, 2, 3, 4, 1, 8, 5, 6};
+        int[] expected = {1, 2, 3, 4, 5, 6, 7, 8, 9};
+        SortInteger.sorted(null);
+
+    }
+}
