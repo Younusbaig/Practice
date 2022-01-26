@@ -1,21 +1,11 @@
-import java.util.Scanner;
-
 public class SortInteger {
     public static void main(String[] args) {
-        int[] array = new int[0];
+        int[] array = {1 , 5 , 8 , 99, 121, 545, 212, 89};
         sorted(array);
     }
 
     public static void sorted(int[] numArray) {
-        Scanner sc = new Scanner(System.in);
-        System.out.println("Enter an integer values");
-        int input = sc.nextInt();
-        numArray = new int[input];
 
-        for (int i = 0; i < input; i++) {
-            System.out.println("enter values");
-            numArray[i] = sc.nextInt();
-        }
         for (int i = 0; i < numArray.length; i++) {
             for (int j = i; j < numArray.length; j++) {
                 if (numArray[i] > numArray[j]) {
