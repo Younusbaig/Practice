@@ -1,9 +1,5 @@
 public class SortInteger {
-    public static void main(String[] args) {
-        int[] array = {1 , 5 , 8 , 99, 121, 545, 212, 89};
-        sorted(array);
-    }
-
+    
     public static void sorted(int[] numArray) {
 
         for (int i = 0; i < numArray.length; i++) {
